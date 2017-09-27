@@ -59,7 +59,10 @@ namespace _03_ElementBinding
         }
         private int arg2;
 
-        public int AnswerValue { get { return arg1 + arg2; } }
+        public int AnswerValue
+        {
+            get { return arg1 + arg2; }
+        }
 
     }
 }

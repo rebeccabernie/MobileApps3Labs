@@ -7,9 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <local:Adder x:Key="myCalculator"/>
+    </Page.Resources>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+    <!--
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
             <Rectangle Height="100" Width="100" Fill="SteelBlue" RenderTransformOrigin="0.5,0.5" Margin="50">
                 <Rectangle.RenderTransform>
                     <CompositeTransform ScaleX="{Binding Value, ElementName=MySlider}"
@@ -17,6 +21,20 @@
                 </Rectangle.RenderTransform>
             </Rectangle>
             <Slider Minimum=".5" Maximum="2.0" StepFrequency=".1" x:Name="MySlider"/>
+        </StackPanel>
+-->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    DataContext="{StaticResource myCalculator}">
+            <TextBox x:Name="tbxArg1" InputScope="Number" Margin="5" BorderBrush="Black" BorderThickness="2"
+                     FontSize="{StaticResource TextStyleExtraLargeFontSize}" TextWrapping="Wrap" 
+                     Text="{Binding Arg1, Mode=TwoWay}"/>
+            <TextBlock Text="+" VerticalAlignment="Center" FontSize="{StaticResource TextStyleExtraLargeFontSize}"/>
+            <TextBox x:Name="tbxArg2" InputScope="Number" Margin="5" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="2"
+                     FontSize="{StaticResource TextStyleExtraLargeFontSize}" TextWrapping="Wrap" 
+                     Text="{Binding Arg2, Mode=TwoWay}"/>
+            <TextBlock x:Name="tblAnswer" Margin="5" VerticalAlignment="Center" Width="75"
+                     FontSize="{StaticResource TextStyleExtraLargeFontSize}" TextWrapping="Wrap" 
+                     Text="{Binding AnswerValue, Mode=OneWay}"/>
         </StackPanel>
 
     </Grid>
