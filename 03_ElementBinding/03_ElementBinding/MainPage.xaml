@@ -23,8 +23,8 @@
             <Slider Minimum=".5" Maximum="2.0" StepFrequency=".1" x:Name="MySlider"/>
         </StackPanel>
 -->
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                    DataContext="{StaticResource myCalculator}">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Data context set specifically for this stack panel, nothing else -->
             <TextBox x:Name="tbxArg1" InputScope="Number" Margin="5" BorderBrush="Black" BorderThickness="2"
                      FontSize="{StaticResource TextStyleExtraLargeFontSize}" TextWrapping="Wrap" 
                      Text="{Binding Arg1, Mode=TwoWay}"/>
@@ -35,6 +35,9 @@
             <TextBlock x:Name="tblAnswer" Margin="5" VerticalAlignment="Center" Width="75"
                      FontSize="{StaticResource TextStyleExtraLargeFontSize}" TextWrapping="Wrap" 
                      Text="{Binding AnswerValue, Mode=OneWay}"/>
+
+            <Button x:Name="button" Content="Change" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="40" Click="button_Click"/>
+
         </StackPanel>
 
     </Grid>

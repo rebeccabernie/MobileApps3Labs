@@ -23,9 +23,20 @@ namespace _03_ElementBinding
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        // Create Data Model
+        public Adder calc = new Adder();
+
         public MainPage()
         {
             this.InitializeComponent();
+            DataContext = calc; // Give the page a data context
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            // Change arg 1 & 2 in the background, use button to update screen
+            calc.Arg1 = 110;
+            calc.Arg2 = 200;
         }
     }
 
