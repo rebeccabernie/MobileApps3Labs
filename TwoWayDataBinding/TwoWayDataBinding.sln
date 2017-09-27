@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoWayDataBinding", "TwoWayDataBinding\TwoWayDataBinding.csproj", "{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|ARM.Build.0 = Debug|ARM
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|ARM.Deploy.0 = Debug|ARM
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|x64.ActiveCfg = Debug|x64
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|x64.Build.0 = Debug|x64
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|x64.Deploy.0 = Debug|x64
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|x86.ActiveCfg = Debug|x86
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|x86.Build.0 = Debug|x86
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Debug|x86.Deploy.0 = Debug|x86
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|ARM.ActiveCfg = Release|ARM
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|ARM.Build.0 = Release|ARM
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|ARM.Deploy.0 = Release|ARM
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|x64.ActiveCfg = Release|x64
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|x64.Build.0 = Release|x64
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|x64.Deploy.0 = Release|x64
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|x86.ActiveCfg = Release|x86
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|x86.Build.0 = Release|x86
+		{29D1BC72-369E-4A9D-B356-9CFE1E193BFF}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
