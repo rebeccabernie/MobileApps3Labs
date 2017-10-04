@@ -5,10 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// This lab is based on "A Minimal MVVM UWP App" - John Shewcuk. All code is adapted from this blog post.
-// https://blogs.msdn.microsoft.com/johnshews_blog/2015/09/09/a-minimal-mvvm-uwp-app/
-// GitHub: https://github.com/johnshew/Minimal-UWP-MVVM-CRUD/tree/master/Simple%20MVVM%20UWP%20with%20CRUD
-
 namespace Data
 {
     public class Person

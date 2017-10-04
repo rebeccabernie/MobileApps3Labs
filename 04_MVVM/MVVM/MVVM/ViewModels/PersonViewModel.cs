@@ -17,7 +17,7 @@ namespace ViewModels
     public class PersonViewModel : NotificationBase<Person>
     {
         public PersonViewModel(Person person = null) : base(person) { }
-        
+
         // Handling getting / setting name and age
         public String Name
         {
